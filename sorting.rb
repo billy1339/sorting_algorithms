@@ -48,6 +48,14 @@ class Array
   #   puts [pivot] + less_than.quick_sort + greater_than.quick_sort
   # end
 
+  def quick_sort(arr, left, right)
+    if (right > left)
+      pivot_ind = partition(arr, left, right)
+      quick_sort(arr, left, pivot_ind-1)
+      quick_sort(arr, pivot_ind+1, right)
+    end
+  end
+
   # def partition(arr, left_ind, right_ind)
   #   pivot = arr[left_ind]
   #   left_iterator = left #i
