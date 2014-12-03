@@ -71,9 +71,6 @@ class Array
   #       break
   #     else
   #       self.swap(left_iterator, right_iterator)
-  #       # temp = arr[left_iterator]
-  #       # arr[left_iterator] = arr[right_iterator]
-  #       # arr[right_iterator] = temp
   #     end
   #   end
   # end
@@ -83,6 +80,8 @@ class Array
 
   def merge_sort
   end
+
+  # //might be able to do a,b = b,a for swaping
 
   def swap(left, right)
     # binding.pry
